@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply Job | JobBoard</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar container">
+
+        <div class="logo">
+            <i class="fa-solid fa-briefcase"></i>
+            JobBoard
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="my-applications.html">My Applications</a></li>
+        </ul>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
+        </div>
+
+        <div class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<!-- APPLY FORM -->
+<section class="apply-section">
+<div class="container">
+
+<h2 class="section-title">Apply for Job</h2>
+<p id="applyingForLabel" style="text-align:center; margin-top:-10px; margin-bottom:20px; opacity:0.75;"></p>
+
+<form id="applyForm" class="apply-form">
+
+<div class="form-group">
+<label>Full Name</label>
+<input type="text" id="name" placeholder="Enter your name">
+</div>
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" id="email" placeholder="Enter your email">
+</div>
+
+<div class="form-group">
+<label>Phone</label>
+<input type="text" id="phone" placeholder="Enter phone number">
+</div>
+
+<div class="form-group">
+<label>Experience</label>
+<select id="experience">
+<option value="">Select</option>
+<option>Fresher</option>
+<option>1-3 Years</option>
+<option>3+ Years</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Upload Resume</label>
+<input type="file" id="resume">
+</div>
+
+<button type="submit" class="submit-btn">Submit Application</button>
+
+</form>
+
+</div>
+</section>
+
+<!-- SUCCESS POPUP -->
+<div class="popup" id="popup">
+<div class="popup-content">
+<i class="fa-solid fa-circle-check"></i>
+<h3>Application Submitted!</h3>
+<p>We will contact you soon.</p>
+<button onclick="closePopup()">OK</button>
+</div>
+</div>
+
+<script src="js/jobs-data.js"></script>
+<script src="js/apply.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

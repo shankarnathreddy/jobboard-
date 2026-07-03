@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+    <nav class="navbar container">
+
+        <div class="logo">
+            <i class="fa-solid fa-briefcase"></i>
+            JobBoard
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a href="my-applications.html">My Applications</a></li>
+        </ul>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
+        </div>
+
+        <div class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<!-- ================= CONTACT HERO ================= -->
+<section class="contact-hero">
+    <div class="container">
+        <h1>Get in Touch</h1>
+        <p>We’re here to help you with any questions about jobs, applications, or partnerships.</p>
+    </div>
+</section>
+
+<!-- ================= CONTACT SECTION ================= -->
+<section class="contact-section">
+    <div class="container contact-grid">
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info">
+
+            <div class="info-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Address</h3>
+                <p>Hyderabad, Telangana, India</p>
+            </div>
+
+            <div class="info-card">
+                <i class="fa-solid fa-phone"></i>
+                <h3>Phone</h3>
+                <p>+91 98765 43210</p>
+            </div>
+
+            <div class="info-card">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Email</h3>
+                <p>support@jobportal.com</p>
+            </div>
+
+            <div class="info-card">
+                <i class="fa-solid fa-clock"></i>
+                <h3>Working Hours</h3>
+                <p>Mon - Sat (9AM - 6PM)</p>
+            </div>
+
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="contact-form">
+
+            <h2>Send Message</h2>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="contactName" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="contactEmail" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="contactSubject" placeholder="Subject">
+                </div>
+
+                <div class="form-group">
+                    <textarea id="contactMessage" rows="6" placeholder="Your Message"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- SUCCESS POPUP -->
+<div class="popup" id="popup">
+<div class="popup-content">
+<i class="fa-solid fa-circle-check"></i>
+<h3>Message Sent!</h3>
+<p>We'll get back to you soon.</p>
+<button onclick="document.getElementById('popup').style.display='none'">OK</button>
+</div>
+</div>
+
+<!-- ================= MAP ================= -->
+<section class="map-section">
+    <div class="container">
+        <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.0541888694187!2d78.47444477590202!3d17.38504408390637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99c6c6c6c6c6%3A0x1a2b3c4d5e6f7g8!2sHyderabad!5e0!3m2!1sen!2sin!4v1700000000000"
+    width="100%" 
+    height="350" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy">
+</iframe>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <div class="container footer-bottom">
+        <p>© 2026 JobBoard. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/contact.js"></script>
+<script src="js/script.js"></script>
+<script src="js/auth-nav.js"></script>
+
+</body>
+</html>

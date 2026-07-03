@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobBoard | Find Your Dream Job</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+    <nav class="navbar container">
+
+        <div class="logo">
+            <i class="fa-solid fa-briefcase"></i>
+            JobBoard
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="my-applications.html">My Applications</a></li>
+        </ul>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
+        </div>
+
+        <div class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <span class="tag">India's Fast Growing Job Portal</span>
+            <h1>Find Your Dream Job Today</h1><p>Discover thousands of opportunities from top companies across India. Search jobs based on your skills, location and experience.</p>
+
+            <div class="search-box">
+                <div class="input-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="heroSearchKeyword" placeholder="Job title or keyword">
+                </div>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" id="heroSearchLocation" placeholder="Location">
+                </div>
+
+                <button id="heroSearchBtn"><i class="fa-solid fa-magnifying-glass"></i>Search Jobs</button>
+            </div>
+
+            <div class="stats">
+                <div>
+                    <h2>10K+</h2>
+                    <p>Jobs</p>
+                </div>
+
+                <div>
+                    <h2>500+</h2>
+                    <p>Companies</p>
+                </div>
+
+                <div>
+                    <h2>50K+</h2>
+                    <p>Candidates</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=700" alt="Job Search">
+        </div>
+    </div>
+</section>
+
+<!-- ================= POPULAR CATEGORIES ================= -->
+
+<section class="categories">
+    <div class="container">
+        <div class="section-title">
+            <h2>Popular Job Categories</h2>
+            <p>Explore opportunities across different industries</p>
+        </div>
+
+        <div class="category-grid">
+            <div class="category-card">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Software Development</h3>
+                <p>1,245 Jobs</p>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UI / UX Design</h3>
+                <p>820 Jobs</p>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Data Science</h3>
+                <p>640 Jobs</p>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h3>Digital Marketing</h3>
+                <p>730 Jobs</p>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-cloud"></i>
+                <h3>DevOps</h3>
+                <p>510 Jobs</p>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Cyber Security</h3>
+                <p>450 Jobs</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FEATURED JOBS ================= -->
+
+<section class="featured-jobs">
+    <div class="container">
+        <div class="section-title">
+            <h2>Featured Jobs</h2>
+            <p>Find the latest opportunities from top companies</p>
+        </div>
+        <div class="jobs-grid">
+
+            <!-- Job Card 1 -->
+            <div class="job-card" data-title="Frontend Developer" data-company="Google">
+                <div class="job-header">
+                    <img src="https://placehold.co/64x64/4f46e5/ffffff?text=G&font=roboto" alt="Google">
+                    <span class="job-type">Full Time</span>
+                </div>
+
+                <h3>Frontend Developer</h3>
+                <p class="company"><i class="fa-solid fa-building"></i>Google</p>
+                <p><i class="fa-solid fa-location-dot"></i>Hyderabad</p>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i>₹8 LPA</p>
+
+                <div class="job-buttons">
+                    <a href="job-details.html" class="details-btn">View Details</a>
+                    <a href="apply.html" class="apply-btn">Apply</a>
+                </div>
+            </div>
+
+            <!-- Job Card 2 -->
+
+            <div class="job-card" data-title="Java Developer" data-company="Microsoft">
+                <div class="job-header">
+                    <img src="https://placehold.co/64x64/0ea5e9/ffffff?text=M&font=roboto" alt="Microsoft">
+                    <span class="job-type">Remote</span>
+                </div>
+
+                <h3>Java Developer</h3>
+                <p class="company"><i class="fa-solid fa-building"></i>Microsoft</p>
+                <p><i class="fa-solid fa-location-dot"></i>Bengaluru</p>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i>₹10 LPA</p>
+
+                <div class="job-buttons">
+                    <a href="job-details.html" class="details-btn">View Details</a>
+                    <a href="apply.html" class="apply-btn">Apply</a>
+                </div>
+            </div>
+
+            <!-- Job Card 3 -->
+
+            <div class="job-card" data-title="Backend Developer" data-company="Amazon">
+                <div class="job-header">
+                    <img src="https://placehold.co/64x64/d97706/ffffff?text=A&font=roboto" alt="Amazon">
+                    <span class="job-type">Hybrid</span>
+                </div>
+
+                <h3>Backend Developer</h3>
+                <p class="company"><i class="fa-solid fa-building"></i>Amazon</p>
+                <p><i class="fa-solid fa-location-dot"></i>Chennai</p>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i>₹9 LPA</p>
+
+                <div class="job-buttons">
+                    <a href="job-details.html" class="details-btn">View Details</a>
+                    <a href="apply.html" class="apply-btn">Apply</a>
+                </div>
+
+            </div>
+
+            <!-- Repeat similar cards -->
+
+            <div class="job-card" data-title="UI / UX Designer" data-company="TCS">
+                <div class="job-header">
+                    <img src="https://placehold.co/64x64/16a34a/ffffff?text=TCS&font=roboto" alt="TCS">
+                    <span class="job-type">Full Time</span>
+                </div>
+
+                <h3>UI/UX Designer</h3>
+                <p class="company"><i class="fa-solid fa-building"></i> TCS</p>
+                <p><i class="fa-solid fa-location-dot"></i> Pune</p>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> ₹6 LPA</p>
+
+                <div class="job-buttons">
+                    <a href="job-details.html" class="details-btn">View Details</a>
+                    <a href="apply.html" class="apply-btn">Apply</a>
+                </div>
+            </div>
+
+            <div class="job-card" data-title="Data Analyst" data-company="Infosys">
+                <div class="job-header">
+                    <img src="https://placehold.co/64x64/7c3aed/ffffff?text=IN&font=roboto" alt="Infosys">
+                    <span class="job-type">Remote</span>
+                </div>
+
+                <h3>Data Analyst</h3>
+                <p class="company"><i class="fa-solid fa-building"></i> Infosys</p>
+                <p><i class="fa-solid fa-location-dot"></i> Hyderabad</p>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> ₹7 LPA</p>
+
+                <div class="job-buttons">
+                    <a href="job-details.html" class="details-btn">View Details</a>
+                    <a href="apply.html" class="apply-btn">Apply</a>
+                </div>
+            </div>
+
+            <div class="job-card" data-title="Software Engineer" data-company="Wipro">
+                <div class="job-header">
+                    <img src="https://placehold.co/64x64/db2777/ffffff?text=W&font=roboto" alt="Wipro">
+                    <span class="job-type">Internship</span>
+                </div>
+
+                <h3>Software Engineer</h3>
+                <p class="company"><i class="fa-solid fa-building"></i> Wipro</p>
+                <p><i class="fa-solid fa-location-dot"></i> Noida</p>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> ₹5 LPA</p>
+
+                <div class="job-buttons">
+                    <a href="job-details.html" class="details-btn">View Details</a>
+                    <a href="apply.html" class="apply-btn">Apply</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= TOP COMPANIES ================= -->
+
+<section class="top-companies">
+    <div class="container">
+        <div class="section-title">
+            <h2>Top Hiring Companies</h2>
+            <p>Trusted by the world's leading organizations</p>
+        </div>
+
+        <div class="companies-grid">
+            <div class="company-card">
+                <img src="https://placehold.co/64x64/4f46e5/ffffff?text=G&font=roboto" alt="Google">
+                <h3>Google</h3>
+                <p>120 Open Jobs</p>
+                <span>★★★★★</span>
+            </div>
+
+            <div class="company-card">
+                <img src="https://placehold.co/64x64/0ea5e9/ffffff?text=M&font=roboto" alt="Microsoft">
+                <h3>Microsoft</h3>
+                <p>98 Open Jobs</p>
+                <span>★★★★★</span>
+            </div>
+
+            <div class="company-card">
+                <img src="https://placehold.co/64x64/d97706/ffffff?text=A&font=roboto" alt="Amazon">
+                <h3>Amazon</h3>
+                <p>86 Open Jobs</p>
+                <span>★★★★★</span>
+            </div>
+
+            <div class="company-card">
+                <img src="https://placehold.co/64x64/16a34a/ffffff?text=TCS&font=roboto" alt="TCS">
+                <h3>TCS</h3>
+                <p>150 Open Jobs</p>
+                <span>★★★★☆</span>
+            </div>
+
+            <div class="company-card">
+                <img src="https://placehold.co/64x64/7c3aed/ffffff?text=IN&font=roboto" alt="Infosys">
+                <h3>Infosys</h3>
+                <p>110 Open Jobs</p>
+                <span>★★★★☆</span>
+            </div>
+
+            <div class="company-card">
+                <img src="https://placehold.co/64x64/db2777/ffffff?text=W&font=roboto" alt="Wipro">
+                <h3>Wipro</h3>
+                <p>75 Open Jobs</p>
+                <span>★★★★☆</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why-us">
+    <div class="container">
+        <div class="section-title">
+            <h2>Why Choose JobBoard?</h2>
+            <p>Everything you need to find your next opportunity.</p>
+        </div>
+
+        <div class="why-grid">
+            <div class="why-card">
+                <i class="fa-solid fa-circle-check"></i>
+                <h3>Verified Companies</h3>
+                <p>All employers are verified before posting jobs.</p>
+            </div>
+
+            <div class="why-card">
+                <i class="fa-solid fa-briefcase"></i>
+                <h3>10,000+ Jobs</h3>
+                <p>Thousands of jobs from startups and leading companies.</p>
+            </div>
+
+            <div class="why-card">
+                <i class="fa-solid fa-paper-plane"></i>
+                <h3>Easy Apply</h3>
+                <p>Apply to jobs in just a few clicks.</p>
+            </div>
+
+            <div class="why-card">
+                <i class="fa-solid fa-user-graduate"></i>
+                <h3>Career Growth</h3>
+                <p>Discover opportunities to grow your career.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CALL TO ACTION ================= -->
+
+<section class="cta">
+    <div class="container">
+        <h2>Ready to Find Your Dream Job?</h2>
+        <p>Join thousands of professionals who found their perfect career through JobBoard.</p>
+        <a href="jobs.html" class="cta-btn"><i class="fa-solid fa-arrow-right"></i>Browse Jobs</a>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+    <div class="container footer-container">
+        <div class="footer-about">
+            <h2><i class="fa-solid fa-briefcase"></i>JobBoard</h2>
+            <p>JobBoard helps professionals discover exciting career opportunities and connects companies with talented candidates.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p><i class="fa-solid fa-envelope"></i>support@jobboard.com</p>
+            <p><i class="fa-solid fa-phone"></i>+91 98765 43210</p>
+            <p><i class="fa-solid fa-location-dot"></i>Hyderabad, India</p>
+        </div>
+
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 JobBoard. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/home-search.js"></script>
+<script src="js/jobs-data.js"></script>
+<script src="js/link-job-buttons.js"></script>
+
+<script src="js/auth-nav.js"></script>
+
+</body>
+</html>

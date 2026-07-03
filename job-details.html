@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Details | JobBoard</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar container">
+
+        <div class="logo">
+            <i class="fa-solid fa-briefcase"></i>
+            JobBoard
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="my-applications.html">My Applications</a></li>
+        </ul>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
+        </div>
+
+        <div class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<!-- JOB DETAILS -->
+<section class="job-details">
+<div class="container">
+
+<div class="job-header-box">
+
+<h1 id="jobTitle">Loading&hellip;</h1>
+
+<p>
+<i class="fa-solid fa-building"></i> <span id="jobCompany"></span>
+</p>
+
+<p>
+<i class="fa-solid fa-location-dot"></i> <span id="jobLocation"></span>
+</p>
+
+<p>
+<i class="fa-solid fa-indian-rupee-sign"></i> <span id="jobSalary"></span>
+</p>
+
+<span class="job-type" id="jobType">&nbsp;</span>
+
+</div>
+
+<div class="job-content">
+
+<div class="job-description">
+
+<h2>Job Description</h2>
+<p id="jobDescription"></p>
+
+<h2>Responsibilities</h2>
+<ul id="jobResponsibilities"></ul>
+
+<h2>Requirements</h2>
+<ul id="jobRequirements"></ul>
+
+</div>
+
+<!-- SIDEBAR -->
+<div class="job-sidebar">
+
+<div class="company-box">
+<h3>About Company</h3>
+<p id="jobCompanyBlurb"></p>
+
+<div class="apply-box">
+    <a href="#" id="applyNowLink" class="apply-btn">Apply Now</a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<script src="js/jobs-data.js"></script>
+<script src="js/job-details.js"></script>
+<script src="js/script.js"></script>
+<script src="js/auth-nav.js"></script>
+
+</body>
+</html>
